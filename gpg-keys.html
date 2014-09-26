@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en"
+>
+<head>
+    <title>GPG Keys - null log</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="/gpg-keys.html">
+
+        <meta name="author" content="Michal Stolarczyk" />
+        <meta name="keywords" content="gpg,keys" />
+        <meta name="description" content="From time to time I have a need to work with GPG keys - (i.e. when dealing with third party interfaces and encrypting files to be send). Usually keys which I&#39;m using are being delivered to me - but especially when developing (&amp; testing), I have a need to go back ..." />
+
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.myunited.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/colorful.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link href="/static/custom.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+null log            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="/category/blog.html">Blog</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/gpg-keys.html"
+                       rel="bookmark"
+                       title="Permalink to GPG Keys">
+                        GPG Keys
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="published">
+        <time datetime="2014-01-07T09:46:37+00:00"> Tue 07 January 2014</time>
+    </span>
+
+
+
+	<a href="/tag/gpg.html">gpg</a>
+        /
+	<a href="/tag/keys.html">keys</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <p>From time to time I have a need to work with GPG keys - (i.e. when dealing with third party interfaces and encrypting files to be send). Usually keys which I'm using are being delivered to me - but especially when developing (&amp; testing), I have a need to go back to command line and use gpg from within it. As each time when I'm doing so, I have to either read <code>man</code> for <code>GPG</code> or use Google, I just thought that I will put some of the most common things which I'm using in the blog post. </p>
+<h3>Generate GPG Key</h3>
+<div class="highlight"><pre><span class="n">gpg</span> <span class="o">--</span><span class="n">gen</span><span class="o">-</span><span class="n">key</span>
+</pre></div>
+
+
+<h3>List GPG Keys</h3>
+<div class="highlight"><pre><span class="n">gpg</span> <span class="o">--</span><span class="n">list</span><span class="o">-</span><span class="n">keys</span>
+</pre></div>
+
+
+<h3>Import GPG Key</h3>
+<div class="highlight"><pre><span class="cp"># public key</span>
+<span class="n">gpg</span> <span class="o">--</span><span class="n">import</span> <span class="o">~/</span><span class="n">public_key</span><span class="p">.</span><span class="n">gpg</span>
+
+<span class="cp"># secret key</span>
+<span class="n">gpg</span> <span class="o">--</span><span class="n">allow</span><span class="o">-</span><span class="n">secret</span><span class="o">-</span><span class="n">key</span><span class="o">-</span><span class="n">import</span> <span class="o">--</span><span class="n">import</span> <span class="o">~/</span><span class="n">secret_key</span><span class="p">.</span><span class="n">gpg</span>
+</pre></div>
+
+
+<h3>Export GPG Key</h3>
+<div class="highlight"><pre><span class="cp"># public key</span>
+<span class="cp"># AAAAAA being the ID of the key from the command listing keys</span>
+<span class="n">gpg</span> <span class="o">--</span><span class="n">output</span> <span class="n">exported_key_pub</span><span class="p">.</span><span class="n">gpg</span> <span class="o">--</span><span class="n">armor</span> <span class="o">--</span><span class="n">export</span> <span class="n">AAAAAA</span>
+
+<span class="cp"># secret key</span>
+<span class="cp"># AAAAAA being the ID of the key from key command listing keys</span>
+<span class="n">gpg</span> <span class="o">--</span><span class="n">output</span> <span class="n">exported_key_sec</span><span class="p">.</span><span class="n">gpg</span> <span class="o">--</span><span class="n">armor</span> <span class="o">--</span><span class="n">export</span><span class="o">-</span><span class="n">secret</span><span class="o">-</span><span class="n">key</span> <span class="n">AAAAA</span>
+</pre></div>
+            </div>
+            <!-- /.entry-content -->
+        </article>
+    </section>
+
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2014 Michal Stolarczyk
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+    <!-- GitHub JS -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            if (!window.jXHR) {
+                var jxhr = document.createElement('script');
+                jxhr.type = 'text/javascript';
+                jxhr.src = '/theme/js/jXHR.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(jxhr, s);
+            }
+
+            github.showRepos({
+                user: 'zeroDivisible',
+                count: 5,
+                skip_forks: false,
+                target: '#gh_repos'
+            });
+        });
+    </script>
+    <script src="/theme/js/github.js" type="text/javascript"></script>
+    <!-- End GitHub JS Code -->
+</body>
+</html>
