@@ -35,7 +35,6 @@ CUSTOM_CSS = 'static/custom.css'
 THEME = './pelican-bootstrap/'
 BOOTSTRAP_THEME = 'myunited'
 PYGMENTS_STYLE = 'colorful'
-HIDE_SIDEBAR = True
 BOOTSTRAP_NAVBAR_INVERSE = True
 
 
