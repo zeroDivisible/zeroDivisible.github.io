@@ -4,8 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Michal Stolarczyk'
 SITENAME = u'null log'
-SITEURL = 'http://zerodivisible.io'
-RELATIVE_URLS = True
+#SITEURL = 'http://zerodivisible.io'
+#RELATIVE_URLS = True
 GITHUB_USER = u'zeroDivisible'
 DEFAULT_PAGINATION = 10
 TIMEZONE = 'Europe/Dublin'
@@ -31,8 +31,17 @@ CATEGORY_SAVE_AS = "category/{slug}/index.html"
 TAG_URL = "tag/{slug}/"
 TAG_SAVE_AS = "tag/{slug}/index.html"
 
+AUTHOR_URL = 'author/{slug}/'
+AUTHOR_SAVE_AS = 'author/{slug}/index.html'
+
 # Generate yearly archive
 YEAR_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/index.html'
+MONTH_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/index.html'
+
+ARCHIVES_SAVE_AS = 'archives/index.html'
+AUTHORS_SAVE_AS = 'authors/index.html'
+CATEGORIES_SAVE_AS = 'categories/index.html'
+TAGS_SAVE_AS = 'tags/index.html'
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/zeroDivisible'),
@@ -56,3 +65,4 @@ HIDE_SIDEBAR = True
 PYGMENTS_MD_OPTIONS = {'linenos': 'table'}
 
 GOOGLE_ANALYTICS = 'UA-47086458-1'
+
