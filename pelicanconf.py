@@ -4,7 +4,8 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Michal Stolarczyk'
 SITENAME = u'null log'
-SITEURL = ''
+SITEURL = 'http://zerodivisible.io'
+RELATIVE_URLS = True
 GITHUB_USER = u'zeroDivisible'
 DEFAULT_PAGINATION = 10
 TIMEZONE = 'Europe/Dublin'
@@ -19,6 +20,19 @@ TRANSLATION_FEED_ATOM = None
 
 # Blogroll
 LINKS = ()
+
+#url settings
+ARTICLE_URL = "blog/{date:%Y}/{date:%m}/{slug}/"
+ARTICLE_SAVE_AS = "blog/{date:%Y}/{date:%m}/{slug}/index.html"
+
+CATEGORY_URL = "category/{slug}/"
+CATEGORY_SAVE_AS = "category/{slug}/index.html"
+
+TAG_URL = "tag/{slug}/"
+TAG_SAVE_AS = "tag/{slug}/index.html"
+
+# Generate yearly archive
+YEAR_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/index.html'
 
 # Social widget
 SOCIAL = (('twitter', 'https://twitter.com/zeroDivisible'),
@@ -36,6 +50,9 @@ THEME = './pelican-bootstrap/'
 BOOTSTRAP_THEME = 'myunited'
 PYGMENTS_STYLE = 'colorful'
 BOOTSTRAP_NAVBAR_INVERSE = True
+HIDE_SIDEBAR = True
 
 
-#PYGMENTS_RST_OPTIONS = {'linenos': 'table'}
+PYGMENTS_MD_OPTIONS = {'linenos': 'table'}
+
+GOOGLE_ANALYTICS = 'UA-47086458-1'
