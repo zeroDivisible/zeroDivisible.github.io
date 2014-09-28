@@ -8,6 +8,7 @@ SITEURL = ''
 #RELATIVE_URLS = True
 TIMEZONE = 'Europe/Dublin'
 DEFAULT_LANG = u'en'
+TYPOGRIFY = True
 
 PATH = 'content'
 
