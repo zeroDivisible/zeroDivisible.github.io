@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = u'Michal Stolarczyk'
 SITENAME = u'null log'
-#SITEURL = 'http://zerodivisible.io'
+SITEURL = 'http://zerodivisible.io'
 #RELATIVE_URLS = True
 GITHUB_USER = u'zeroDivisible'
 DEFAULT_PAGINATION = 10
