@@ -38,16 +38,9 @@ AUTHOR_SAVE_AS = 'author/{slug}/index.html'
 YEAR_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/index.html'
 
-ARCHIVES_URL = 'archives/'
 ARCHIVES_SAVE_AS = 'archives/index.html'
-
-AUTHORS_URL = 'authors/'
-AUTHORS_SAVE_AS = 'authors/index.html'
-
-CATEGORIES_URL = 'categories/'
+AUTHORS_SAVE_AS = ''
 CATEGORIES_SAVE_AS = 'categories/index.html'
-
-TAGS_URL = 'tags/'
 TAGS_SAVE_AS = 'tags/index.html'
 
 # Social widget
