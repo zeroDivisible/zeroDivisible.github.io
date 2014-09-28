@@ -31,6 +31,7 @@ AUTHOR_SAVE_AS = 'author/{slug}/index.html'
 YEAR_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/index.html'
 MONTH_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/{date:%m}/index.html'
 
+ARCHIVES_URL = 'archives/'
 ARCHIVES_SAVE_AS = 'archives/index.html'
 AUTHORS_SAVE_AS = ''
 CATEGORIES_SAVE_AS = 'categories/index.html'
