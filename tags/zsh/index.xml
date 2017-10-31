@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zsh on zerodivisible.io</title>
+    <link>https://zerodivisible.io/tags/zsh/</link>
+    <description>Recent content in Zsh on zerodivisible.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 04 Jan 2015 20:47:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://zerodivisible.io/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Emacs&#39;s ansi-term with ZSH</title>
+      <link>https://zerodivisible.io/blog/using-emacss-ansi-term-with-zsh/</link>
+      <pubDate>Sun, 04 Jan 2015 20:47:00 +0000</pubDate>
+      
+      <guid>https://zerodivisible.io/blog/using-emacss-ansi-term-with-zsh/</guid>
+      <description>If instead of Bash you&amp;rsquo;re using ZSH and you somehow decided to be even more hipster, you can try using ZSH from within Emacs. There are multiple terminal emulators accessible inside Emacs, but for me, when I had been running the whole setup on OSX, neither of them didn&amp;rsquo;t play nicely with ANSI escape codes. Solution which worked for me was described on StackOverflow and to work, required me to:</description>
+    </item>
+    
+  </channel>
+</rss>

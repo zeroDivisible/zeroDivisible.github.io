@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Intellij Idea on zerodivisible.io</title>
+    <link>https://zerodivisible.io/tags/intellij-idea/</link>
+    <description>Recent content in Intellij Idea on zerodivisible.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 10 Jan 2014 11:44:08 +0000</lastBuildDate>
+    
+	<atom:link href="https://zerodivisible.io/tags/intellij-idea/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gradle: adding new sourceSets recognized from Intellij IDEA</title>
+      <link>https://zerodivisible.io/blog/gradle-adding-new-sourcesets-recognized-from-intellij-idea/</link>
+      <pubDate>Fri, 10 Jan 2014 11:44:08 +0000</pubDate>
+      
+      <guid>https://zerodivisible.io/blog/gradle-adding-new-sourcesets-recognized-from-intellij-idea/</guid>
+      <description>From time to time having normal tests configured in my Gradle build files is not enough - especially when I&amp;rsquo;m dealing with big, multi-module projects. There might be a need to either create a functional test or maybe test the behaviour of code while playing with new library. If unit tests are not enough in this case, it&amp;rsquo;s better to create some kind of functional or integration one, especially that once it&amp;rsquo;s done in a structured way, your colleagues will know where to go if they want to check something.</description>
+    </item>
+    
+  </channel>
+</rss>
