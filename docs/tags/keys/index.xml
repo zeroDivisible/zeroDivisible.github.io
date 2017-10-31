@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Keys on zerodivisible.io</title>
+    <link>https://zerodivisible.io/tags/keys/</link>
+    <description>Recent content in Keys on zerodivisible.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 07 Jan 2014 09:46:37 +0000</lastBuildDate>
+    
+	<atom:link href="https://zerodivisible.io/tags/keys/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>GPG Keys</title>
+      <link>https://zerodivisible.io/blog/gpg-keys/</link>
+      <pubDate>Tue, 07 Jan 2014 09:46:37 +0000</pubDate>
+      
+      <guid>https://zerodivisible.io/blog/gpg-keys/</guid>
+      <description>From time to time I have a need to work with GPG keys - (i.e. when dealing with third party interfaces and encrypting files to be send). Usually keys which I&amp;rsquo;m using are being delivered to me - but especially when developing (&amp;amp; testing), I have a need to go back to command line and use gpg from within it. As each time when I&amp;rsquo;m doing so, I have to either read man for GPG or use Google, I just thought that I will put some of the most common things which I&amp;rsquo;m using in the blog post.</description>
+    </item>
+    
+  </channel>
+</rss>

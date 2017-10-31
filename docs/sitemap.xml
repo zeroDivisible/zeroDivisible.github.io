@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://zerodivisible.io/blog/archlinux-and-aur-packages-signed-with-untrusted-gpg-key/</loc>
+    <lastmod>2015-01-18T18:38:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/blog/capturing-gifs-from-desktop-on-os-x/</loc>
+    <lastmod>2015-01-11T00:04:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/blog/using-emacss-ansi-term-with-zsh/</loc>
+    <lastmod>2015-01-04T20:47:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/blog/gradle-adding-new-sourcesets-recognized-from-intellij-idea/</loc>
+    <lastmod>2014-01-10T11:44:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/blog/curl-put-a-file-using-http-basic-auth/</loc>
+    <lastmod>2014-01-07T15:57:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/blog/gpg-keys/</loc>
+    <lastmod>2014-01-07T09:46:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/ansible/</loc>
+    <lastmod>2015-01-18T18:38:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/archlinux/</loc>
+    <lastmod>2015-01-18T18:38:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/aur/</loc>
+    <lastmod>2015-01-18T18:38:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/categories/blog/</loc>
+    <lastmod>2015-01-18T18:38:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/blog/</loc>
+    <lastmod>2015-01-18T18:38:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/categories/</loc>
+    <lastmod>2015-01-18T18:38:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/curl/</loc>
+    <lastmod>2014-01-07T15:57:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/emacs/</loc>
+    <lastmod>2015-01-04T20:47:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/gfycat/</loc>
+    <lastmod>2015-01-11T00:04:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/gif/</loc>
+    <lastmod>2015-01-11T00:04:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/gifgrabber/</loc>
+    <lastmod>2015-01-11T00:04:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/gpg/</loc>
+    <lastmod>2015-01-18T18:38:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/gpg-agent/</loc>
+    <lastmod>2015-01-18T18:38:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/gradle/</loc>
+    <lastmod>2014-01-10T11:44:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/intellij-idea/</loc>
+    <lastmod>2014-01-10T11:44:08+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/keys/</loc>
+    <lastmod>2014-01-07T09:46:37+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/makepkg/</loc>
+    <lastmod>2015-01-18T18:38:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/note/</loc>
+    <lastmod>2014-01-07T15:57:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/os-x/</loc>
+    <lastmod>2015-01-11T00:04:03+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/put/</loc>
+    <lastmod>2014-01-07T15:57:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/rest/</loc>
+    <lastmod>2014-01-07T15:57:18+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/</loc>
+    <lastmod>2015-01-18T18:38:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/vagrant/</loc>
+    <lastmod>2015-01-18T18:38:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/tags/zsh/</loc>
+    <lastmod>2015-01-04T20:47:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://zerodivisible.io/</loc>
+    <lastmod>2015-01-18T18:38:28+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

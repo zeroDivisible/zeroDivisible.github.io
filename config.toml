@@ -1,0 +1,43 @@
+baseURL             = "https://zerodivisible.io/"
+title               = "zerodivisible.io"
+languageCode        = "en"
+theme               = "cocoa"
+disqusshortname     = "zerodivisible.io" # Comment out to disable Disqus.
+canonifyurls        = true
+contentdir          = "content"
+layoutdir           = "layouts"
+publishdir          = "docs" # will deploy github pages from the docs folder
+enableRobotsTXT     = true
+
+[permalinks]
+blog = "blog/:slug/"
+
+[[menu.main]]
+name                   = "blog"
+weight                 = -120
+identifier             = "blog"
+url                    = "/blog/"
+
+[[menu.main]]
+name                   = "about"
+weight                 = -110
+identifier             = "about"
+url                    = "/about/"
+
+[[menu.main]]
+name                   = "code"
+weight                 = -100
+identifier             = "code"
+url = "/code/"
+
+[params]
+latestpostscount = 5 # how many posts to display on the home page
+selfintro = "I hope this time I'll write some posts."
+highlightjs = true
+
+twitter = "//https://twitter.com/zeroDivisible"
+github = "//https://github.com/zeroDivisible"
+
+[taxonomies]
+tag = "tags"
+category = "categories"

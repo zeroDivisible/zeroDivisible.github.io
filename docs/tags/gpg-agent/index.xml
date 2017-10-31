@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gpg Agent on zerodivisible.io</title>
+    <link>https://zerodivisible.io/tags/gpg-agent/</link>
+    <description>Recent content in Gpg Agent on zerodivisible.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 18 Jan 2015 18:38:28 +0000</lastBuildDate>
+    
+	<atom:link href="https://zerodivisible.io/tags/gpg-agent/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Archlinux and AUR packages signed With untrusted GPG key</title>
+      <link>https://zerodivisible.io/blog/archlinux-and-aur-packages-signed-with-untrusted-gpg-key/</link>
+      <pubDate>Sun, 18 Jan 2015 18:38:28 +0000</pubDate>
+      
+      <guid>https://zerodivisible.io/blog/archlinux-and-aur-packages-signed-with-untrusted-gpg-key/</guid>
+      <description>Archlinux is a really interesting Linux distribution - and it&amp;rsquo;s one of my favorite ones. It might have a steep learning curve, but once you dig into it, it will work like a charm. Unless you will switch to some distro and want to come back after an undefined period of time.
+As recently I&amp;rsquo;ve been mostly using CentOS &amp;amp; RedHat Linux, I wanted to get back to Archlinux, just to spice things a little and see what&amp;rsquo;s going on in with my favorite distro.</description>
+    </item>
+    
+  </channel>
+</rss>

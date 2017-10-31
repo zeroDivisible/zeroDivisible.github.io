@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="no-referrer">
+
+<meta name="description" content="Archlinux is a really interesting Linux distribution - and it&rsquo;s one of my favorite ones. It might have a steep learning curve, but once you dig into it, it will work like a charm. Unless you will switch to some distro and want to come back after an undefined period of time.
+As recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get back to Archlinux, just to spice things a little and see what&rsquo;s going on in with my favorite distro.">
+
+<meta property="og:title" content="Archlinux and AUR packages signed With untrusted GPG key" />
+<meta property="og:description" content="Archlinux is a really interesting Linux distribution - and it&rsquo;s one of my favorite ones. It might have a steep learning curve, but once you dig into it, it will work like a charm. Unless you will switch to some distro and want to come back after an undefined period of time.
+As recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get back to Archlinux, just to spice things a little and see what&rsquo;s going on in with my favorite distro." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://zerodivisible.io/blog/archlinux-and-aur-packages-signed-with-untrusted-gpg-key/" />
+
+
+
+<meta property="article:published_time" content="2015-01-18T18:38:28&#43;00:00"/>
+
+<meta property="article:modified_time" content="2015-01-18T18:38:28&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+
+<title>
+
+
+     Archlinux and AUR packages signed With untrusted GPG key 
+
+</title>
+<link rel="canonical" href="https://zerodivisible.io/blog/archlinux-and-aur-packages-signed-with-untrusted-gpg-key/">
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/default.min.css">
+
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Ubuntu+Mono:400,400i,700,700i|Raleway:500">
+
+
+
+    <link rel="stylesheet" href="https://zerodivisible.io/css/reset.css">
+    <link rel="stylesheet" href="https://zerodivisible.io/css/pygments.css">
+    <link rel="stylesheet" href="https://zerodivisible.io/css/main.css">
+    
+
+
+
+
+<link rel="shortcut icon"
+
+    href="https://zerodivisible.io/img/favicon.ico"
+
+>
+
+
+
+
+</head>
+
+
+<body lang="">
+
+<section class="header">
+    <div class="container">
+        <div class="content">
+            
+            <a href="https://zerodivisible.io/"><div class="name"></div></a>
+            
+              <h3 class="self-intro">I hope this time I&#39;ll write some posts.</h3>
+            
+            <nav>
+                <ul>
+                    
+                        <li class="nav-blog"><a href="https://zerodivisible.io/blog/"><span>blog</span></a></li>
+                    
+                        <li class="nav-about"><a href="https://zerodivisible.io/about/"><span>about</span></a></li>
+                    
+                        <li class="nav-code"><a href="https://zerodivisible.io/code/"><span>code</span></a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+</section>
+
+<section class="icons">
+    <div class="container">
+        <div class="content">
+
+        
+            <a href="//https://github.com/zeroDivisible" target="_blank" rel="noopener"><img class="icon" src="https://zerodivisible.io/img/github.svg" alt="github" /></a>
+        
+
+        
+            <a href="//https://twitter.com/zeroDivisible" target="_blank" rel="noopener"><img class="icon" src="https://zerodivisible.io/img/twitter.svg" alt="twitter" /></a>
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+            <a href="https://zerodivisible.io/index.xml"><img class="icon" src="https://zerodivisible.io/img/rss.svg" alt="rss" /></a>
+        
+        
+        </div>
+    </div>
+</section>
+
+
+<section class="main post non-narrow zero-top-spacing">
+    <div class="container">
+        <div class="content">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
+
+    Archlinux and AUR packages signed With untrusted GPG key
+
+</div>
+
+                    <div class="initials"><a href="https://zerodivisible.io/"></a></div>
+                </div>
+                <div class="meta">
+                    
+                    <div class="date" title='Sun Jan 18 2015 18:38:28 &#43;0000'>Jan 18, 2015</div>
+                    
+                    
+		    <div class="reading-time"><div class="middot"></div>3 minutes read</div>
+                    
+                </div>
+            </div>
+            <div class="markdown">
+                <p><a href="https://www.archlinux.org/">Archlinux</a> is a really interesting Linux distribution - and it&rsquo;s one of my favorite ones. It might have a steep learning curve, but once you dig into it, it will work like a charm. Unless you will switch to some distro and want to come back after an undefined period of time.</p>
+
+<p>As recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get back to Archlinux, just to spice things a little and see what&rsquo;s going on in with my favorite distro. The easiest way of gradually going back, was to build my personal dev environment (&ldquo;playground&rdquo;) based on Arch. I had decided to create a set of <a href="http://www.ansible.com/home">Ansible</a> playbooks, which I could then use both with <a href="https://www.vagrantup.com/">Vagrant</a> to spin the env, and later use the same set of scripts to provision my laptop, once I will decide to switch the main OS to Arch once again (it&rsquo;s not a question of &ldquo;if&rdquo;, only &ldquo;when&rdquo; :)).</p>
+
+<p>Everything was going smoothly, except when I had started to install packages from <a href="https://wiki.archlinux.org/index.php/Arch_User_Repository">AUR</a>. There&rsquo;s a whole separate back-story of the rationale behind my problem, but it boils down to the fact that in my Ansible playbooks I needed to be able to either automatically trust incoming keys or disable that verification check.</p>
+
+<p>Some background details can be found here:</p>
+
+<ul>
+<li><a href="https://www.archlinux.org/news/having-pacman-verify-packages/">Having pacman verify packages</a></li>
+<li><a href="https://www.archlinux.org/news/gnupg-21-and-the-pacman-keyring/">GnuPG 2.1 and the pacman keyring</a></li>
+<li><a href="http://allanmcrae.com/2015/01/two-pgp-keyrings-for-package-management-in-arch-linux/">Two PGP Keyrings for Package Management in Arch Linux</a></li>
+<li><a href="https://pierre-schmitz.com/verify-all-the-packages/">Verify all the Packages</a></li>
+</ul>
+
+<p>I didn&rsquo;t had a chance to play with <a href="https://www.gnupg.org/faq/whats-new-in-2.1.html">GnuPG 2.1</a> before, so instead of disabling the check, I opted for finding means of trusting the incoming keys automatically. (as this is just a dev env, for now). The final solution which I had decided to go for required addition of two simple tasks to my Ansible role.</p>
+
+<p>To use an example, if I wanted to install <a href="https://aur.archlinux.org/packages/kafka/"><code>kafka</code> from AUR</a> (which was failing, because I didn&rsquo;t trust the keys used to sign that package), I needed to add:</p>
+
+<pre><code>- name: import gpg keys
+  sudo: yes
+  sudo_user: &quot;{{ makepkg_nonroot_user }}&quot;
+  command: gpg --recv-key {{ item }}
+  with_items:
+    - 865187967F1183BD
+    - 14B7C839C4F7D536A7BC9CAB865187967F1183BD
+
+- name: trust required gpg keys
+  sudo: yes
+  sudo_user: &quot;{{ makepkg_nonroot_user }}&quot;
+  command: printf 'trust\n5\ny\nquit\n' | gpg --no-permission-warning --command-fd 0 --edit-key 14B7C839C4F7D536A7BC9CAB865187967F1183BD
+</code></pre>
+
+<p>By using <code>sudo: yes</code> and setting the user to the one stored in <code>makepkg_nonroot_user</code> variable, I&rsquo;m stating that task is being run as the non-root user who will later be used to install specific package. Command in second step is saying that I&rsquo;m giving ultimate trust to specified key (only do so if you really trust the key!). It uses piping of input to standard <code>gpg</code> <a href="https://www.gnupg.org/gph/en/manual/r899.html"><code>edit-key</code></a> command, with the actions being read from standard input (<code>--command-fd 0</code> sets file descriptor of command to <code>0</code> which is <code>stdin</code>).</p>
+
+<p>The command which we&rsquo;re passing:</p>
+
+<pre><code>trust
+5
+y
+quit
+</code></pre>
+
+<p>is just an invocation of trusting a key, with highest level (5), confirming it with <code>y</code> and quitting the edit mode.</p>
+
+                <br>
+		<p><a href="https://zerodivisible.io/blog/">Back to posts</a></p>
+            </div>
+            <br>
+            <div class="disqus">
+                <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "zerodivisible.io" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  
+
+  <script type="text/javascript">
+    hljs.initHighlightingOnLoad();
+  </script>
+
+
+
+
+</body>
+</html>
+
