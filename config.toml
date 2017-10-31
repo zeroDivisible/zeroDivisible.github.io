@@ -6,6 +6,7 @@ disqusshortname     = "zerodivisible.io" # Comment out to disable Disqus.
 canonifyurls        = true
 contentdir          = "content"
 layoutdir           = "layouts"
+publishdir          = "."
 enableRobotsTXT     = true
 
 [permalinks]
