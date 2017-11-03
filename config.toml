@@ -32,11 +32,11 @@ url = "/code/"
 
 [params]
 latestpostscount = 5 # how many posts to display on the home page
-selfintro = "I hope this time I'll write some posts."
+selfintro = "I hope I'll write some posts this time."
 highlightjs = true
 
-twitter = "//https://twitter.com/zeroDivisible"
-github = "//https://github.com/zeroDivisible"
+twitter = "//twitter.com/zeroDivisible"
+github = "//github.com/zeroDivisible"
 
 [taxonomies]
 tag = "tags"
