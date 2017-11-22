@@ -17,8 +17,8 @@
       <pubDate>Sun, 18 Jan 2015 18:38:28 +0000</pubDate>
       
       <guid>https://zerodivisible.io/blog/archlinux-and-aur-packages-signed-with-untrusted-gpg-key/</guid>
-      <description>Archlinux is my main (and currently used) Linux distribution. It might have a steep learning curve, but once configured, it will work like a charm. Just don&amp;rsquo;t leave it be for few months and use something else in that time - because once back, you won&amp;rsquo;t recognize how things had changed :)
-Recently I&amp;rsquo;ve been mostly using CentOS &amp;amp; RedHat Linux, I wanted to get back to Archlinux, just to see some recent changes.</description>
+      <description>Archlinux is my main Linux distribution. It might have a steep learning curve, but once configured, it works like a charm. Just don&amp;rsquo;t leave it unused for few months - once back, you&amp;rsquo;ll you won&amp;rsquo;t recognize the OS. Oh, and don&amp;rsquo;t do updates just before whatever deadlines you have for the stuff you&amp;rsquo;re working on.
+Recently I&amp;rsquo;ve been mostly using CentOS &amp;amp; RedHat Linux at work, so I had been playing with those OSs at home too.</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@ Recently I&amp;rsquo;ve been mostly using CentOS &amp;amp; RedHat Linux, I wante
       <pubDate>Tue, 07 Jan 2014 09:46:37 +0000</pubDate>
       
       <guid>https://zerodivisible.io/blog/gpg-keys/</guid>
-      <description>From time to time I have a need to work with GPG keys - (i.e. when dealing with third party interfaces and encrypting files to be send). Usually keys which I&amp;rsquo;m using are being delivered to me - but especially when developing (&amp;amp; testing), I have a need to go back to command line and use gpg from within it. As each time when I&amp;rsquo;m doing so, I have to either read man for GPG or use Google, I just thought that I will put some of the most common things which I&amp;rsquo;m using in the blog post.</description>
+      <description>I didn&amp;rsquo;t have much chances to work with GPG - and when I usually do, it&amp;rsquo;s to communicate with third-party services, when exchanging encrypted files. Usually keys which I&amp;rsquo;m using are being delivered to me - but especially when developing (&amp;amp; testing), I have a need to get back to the command line and somehow generate a key for myself. Each time when doing this, instead of reaching to man, I thought that I may document the command on this blog:</description>
     </item>
     
   </channel>

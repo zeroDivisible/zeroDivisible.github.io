@@ -9,12 +9,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 
-<meta name="description" content="Archlinux is my main (and currently used) Linux distribution. It might have a steep learning curve, but once configured, it will work like a charm. Just don&rsquo;t leave it be for few months and use something else in that time - because once back, you won&rsquo;t recognize how things had changed :)
-Recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get back to Archlinux, just to see some recent changes.">
+<meta name="description" content="Archlinux is my main Linux distribution. It might have a steep learning curve, but once configured, it works like a charm. Just don&rsquo;t leave it unused for few months - once back, you&rsquo;ll you won&rsquo;t recognize the OS. Oh, and don&rsquo;t do updates just before whatever deadlines you have for the stuff you&rsquo;re working on.
+Recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux at work, so I had been playing with those OSs at home too.">
 
 <meta property="og:title" content="Archlinux and AUR packages signed With untrusted GPG key" />
-<meta property="og:description" content="Archlinux is my main (and currently used) Linux distribution. It might have a steep learning curve, but once configured, it will work like a charm. Just don&rsquo;t leave it be for few months and use something else in that time - because once back, you won&rsquo;t recognize how things had changed :)
-Recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get back to Archlinux, just to see some recent changes." />
+<meta property="og:description" content="Archlinux is my main Linux distribution. It might have a steep learning curve, but once configured, it works like a charm. Just don&rsquo;t leave it unused for few months - once back, you&rsquo;ll you won&rsquo;t recognize the OS. Oh, and don&rsquo;t do updates just before whatever deadlines you have for the stuff you&rsquo;re working on.
+Recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux at work, so I had been playing with those OSs at home too." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zerodivisible.io/blog/archlinux-and-aur-packages-signed-with-untrusted-gpg-key/" />
 
@@ -159,13 +159,13 @@ Recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get
                 </div>
             </div>
             <div class="markdown">
-                <p><a href="https://www.archlinux.org/">Archlinux</a> is my main (and currently used) Linux distribution. It might have a steep learning curve, but once configured, it will work like a charm. Just don&rsquo;t leave it be for few months and use something else in that time - because once back, you won&rsquo;t recognize how things had changed :)</p>
+                <p><a href="https://www.archlinux.org/">Archlinux</a> is my main Linux distribution. It might have a steep learning curve, but once configured, it works like a charm. Just don&rsquo;t leave it unused for few months - once back, you&rsquo;ll you won&rsquo;t recognize the OS. Oh, and don&rsquo;t do updates just before whatever deadlines you have for the stuff you&rsquo;re working on.</p>
 
-<p>Recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get back to Archlinux, just to see some recent changes. The easiest way of gradually going back, was to build my personal dev environment (&ldquo;playground&rdquo;) based on Arch. I had decided to create a set of <a href="http://www.ansible.com/home">Ansible</a> playbooks, which I could then use both from within <a href="https://www.vagrantup.com/">Vagrant</a> and later use the same set of scripts to provision my laptop and / or PC.</p>
+<p>Recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux at work, so I had been playing with those OSs at home too. In the end, I wanted to get back to Arch. The way how I did this usually was building my personal environment (&ldquo;playground&rdquo;) based on Arch. I have a set of <a href="http://www.ansible.com/home">Ansible</a> playbooks, which I could use both from within <a href="https://www.vagrantup.com/">Vagrant</a> and later on a physical PC.</p>
 
-<p>Everything was going smoothly, until I started installing packages from <a href="https://wiki.archlinux.org/index.php/Arch_User_Repository">AUR</a>. There&rsquo;s a whole separate back-story of the rationale behind my problem, but it boils down to the fact that in my Ansible playbooks I needed to be able to either automatically trust incoming GPG keys or disable that verification check.</p>
+<p>Everything was going smoothly, until I started installing packages from <a href="https://wiki.archlinux.org/index.php/Arch_User_Repository">AUR</a>. There&rsquo;s a whole back-story of the rationale behind my problem, but it boils down to the fact that in my Ansible playbooks I needed to be able to either automatically trust incoming GPG keys or disable that verification check.</p>
 
-<p>Some quick googling brought me to those pages:</p>
+<p>Some quick googling returned the results suggesting that I&rsquo;m not the only one hitting this issue:</p>
 
 <ul>
 <li><a href="https://www.archlinux.org/news/having-pacman-verify-packages/">Having pacman verify packages</a></li>
@@ -174,9 +174,9 @@ Recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get
 <li><a href="https://pierre-schmitz.com/verify-all-the-packages/">Verify all the Packages</a></li>
 </ul>
 
-<p>I didn&rsquo;t had a chance to play with <a href="https://www.gnupg.org/faq/whats-new-in-2.1.html">GnuPG 2.1</a> before, so instead of disabling the check, I opted for finding means of trusting the incoming keys automatically. (as this is just a dev env, for now). The final solution which I had decided to go for required addition of two simple tasks to my Ansible role.</p>
+<p>I didn&rsquo;t had a chance to play with <a href="https://www.gnupg.org/faq/whats-new-in-2.1.html">GnuPG 2.1</a> before, so instead of disabling the check, I opted for finding means of trusting the incoming keys automatically. (hey, it&rsquo;s a playground for now). The final solution which I had decided to go for required addition of two simple tasks to my Ansible role.</p>
 
-<p>To use an example, if I wanted to install <a href="https://aur.archlinux.org/packages/kafka/"><code>kafka</code> from AUR</a> (which was failing, because I didn&rsquo;t trust the keys used to sign that package), I needed to add:</p>
+<p>To use an example, if I wanted to install <a href="https://aur.archlinux.org/packages/kafka/"><code>kafka</code> from AUR</a> (which was failing, because I didn&rsquo;t trust the keys used to sign that package). To trust those keys automatically form within Ansible role, I came with this monstrosity:</p>
 
 <pre><code>- name: import gpg keys
   sudo: yes
@@ -192,9 +192,9 @@ Recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get
   command: printf 'trust\n5\ny\nquit\n' | gpg --no-permission-warning --command-fd 0 --edit-key 14B7C839C4F7D536A7BC9CAB865187967F1183BD
 </code></pre>
 
-<p>By using <code>sudo: yes</code> and setting the user to the one stored in <code>makepkg_nonroot_user</code> variable, I&rsquo;m stating that task is being run as the non-root user who will later be used to install specific package. Command in second step is saying that I&rsquo;m giving ultimate trust to specified key (only do so if you really trust the key!). It uses piping of input to standard <code>gpg</code> <a href="https://www.gnupg.org/gph/en/manual/r899.html"><code>edit-key</code></a> command, with the actions being read from standard input (<code>--command-fd 0</code> sets file descriptor of command to <code>0</code> which is <code>stdin</code>).</p>
+<p>By using <code>sudo: yes</code> and setting the user to the one stored in <code>makepkg_nonroot_user</code> variable, I&rsquo;m stating that the task is being run as the non-root user who will later be used to install specific package. Command in second step is saying that I&rsquo;m giving ultimate trust to specified key (only do so if you really trust the key!). It uses piping of input to standard <code>gpg</code> <a href="https://www.gnupg.org/gph/en/manual/r899.html"><code>edit-key</code></a> command, with the actions being read from standard input (<code>--command-fd 0</code> sets file descriptor of command to <code>0</code> which is <code>stdin</code>).</p>
 
-<p>The command which we&rsquo;re passing:</p>
+<p>The mysterious command which we&rsquo;re passing:</p>
 
 <pre><code>trust
 5

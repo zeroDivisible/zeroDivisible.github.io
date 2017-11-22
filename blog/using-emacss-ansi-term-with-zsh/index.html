@@ -9,10 +9,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 
-<meta name="description" content="If instead of Bash you&rsquo;re using ZSH and you somehow decided to be even more hipster, you can try using ZSH from within Emacs. There are multiple terminal emulators accessible inside Emacs, but for me, when I had been running the whole setup on OSX, neither of them didn&rsquo;t play nicely with ANSI escape codes. Solution which worked for me was described on StackOverflow and to work, required me to:">
+<meta name="description" content="Emacs has a million and one shells which you can run interactively from within the editor. When my login shell was set to ZSH though - and I was running Emacs on OS X, none of the terminal emulators built into Emacs was could display ANSI escape codes correctly. Solution which worked for me was described on StackOverflow and required:
+ adding the following snippet somewhere in the init config:  ;; Use Emacs terminfo, not system terminfo (setq system-uses-terminfo nil)   obtaining a copy of eterm-color.">
 
 <meta property="og:title" content="Using Emacs&#39;s ansi-term with ZSH" />
-<meta property="og:description" content="If instead of Bash you&rsquo;re using ZSH and you somehow decided to be even more hipster, you can try using ZSH from within Emacs. There are multiple terminal emulators accessible inside Emacs, but for me, when I had been running the whole setup on OSX, neither of them didn&rsquo;t play nicely with ANSI escape codes. Solution which worked for me was described on StackOverflow and to work, required me to:" />
+<meta property="og:description" content="Emacs has a million and one shells which you can run interactively from within the editor. When my login shell was set to ZSH though - and I was running Emacs on OS X, none of the terminal emulators built into Emacs was could display ANSI escape codes correctly. Solution which worked for me was described on StackOverflow and required:
+ adding the following snippet somewhere in the init config:  ;; Use Emacs terminfo, not system terminfo (setq system-uses-terminfo nil)   obtaining a copy of eterm-color." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zerodivisible.io/blog/using-emacss-ansi-term-with-zsh/" />
 
@@ -157,10 +159,10 @@
                 </div>
             </div>
             <div class="markdown">
-                <p>If instead of Bash you&rsquo;re using ZSH and you somehow decided to be even more hipster, you can try using ZSH from within Emacs. There are multiple terminal emulators accessible inside Emacs, but for me, when I had been running the whole setup on OSX, neither of them didn&rsquo;t play nicely with <a href="http://en.wikipedia.org/wiki/ANSI_escape_code">ANSI escape codes</a>. Solution which worked for me was described <a href="http://stackoverflow.com/a/8920373/126781">on StackOverflow</a> and to work, required me to:</p>
+                <p>Emacs has a million and one shells which you can run interactively from within the editor. When my login shell was set to ZSH though - and I was running Emacs on OS X, none of the terminal emulators built into Emacs was could display <a href="http://en.wikipedia.org/wiki/ANSI_escape_code">ANSI escape codes</a> correctly. Solution which worked for me was described <a href="http://stackoverflow.com/a/8920373/126781">on StackOverflow</a> and required:</p>
 
 <ul>
-<li>add the following snippet somewhere in the configuration file</li>
+<li>adding the following snippet somewhere in the init config:</li>
 </ul>
 
 <pre><code>;; Use Emacs terminfo, not system terminfo
@@ -168,15 +170,15 @@
 </code></pre>
 
 <ul>
-<li><p>obtain a copy of <code>eterm-color.ti</code> (one is available on <a href="http://opensource.apple.com/source/emacs/emacs-70/emacs/etc/e/eterm-color.ti?txt">Apple&rsquo;s opensource website</a>, saving it somewhere (i.e. <code>/tmp/eterm-color.ti</code></p></li>
+<li><p>obtaining a copy of <code>eterm-color.ti</code> (one is available on <a href="http://opensource.apple.com/source/emacs/emacs-70/emacs/etc/e/eterm-color.ti?txt">Apple&rsquo;s opensource website</a>, saving it somewhere (i.e. <code>/tmp/eterm-color.ti</code></p></li>
 
-<li><p>run <a href="https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/tic.1m.html">tic</a>, pointing it to newly saved file</p></li>
+<li><p>running <a href="https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man1/tic.1m.html">tic</a>, pointing it to newly saved file</p></li>
 </ul>
 
 <pre><code>tic -o /usr/share/terminfo /tmp/eterm-color.ti
 </code></pre>
 
-<p>After doing this, and starting new <code>ansi-term</code> (<code>M-x ansi-term</code>), ANSI escape codes were properly honored.</p>
+<p>After doing this, and starting new <code>ansi-term</code> (<code>M-x ansi-term</code>), ANSI escape codes were properly displayed.</p>
 
                 <br>
 		<p><a href="https://zerodivisible.io/blog/">Back to posts</a></p>

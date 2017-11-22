@@ -17,8 +17,8 @@
       <pubDate>Tue, 07 Jan 2014 15:57:18 +0000</pubDate>
       
       <guid>https://zerodivisible.io/blog/curl-put-a-file-using-http-basic-auth/</guid>
-      <description>There is a myriad of ways how a file can be PUT to a RESTful webservice. If you need to send one using HTTP basic authentication, here is one way to do this using curl:
-curl -u &amp;quot;username:password&amp;quot; -X PUT -H &amp;quot;Content-Type: text/xml&amp;quot; -d &amp;quot;@filepath&amp;quot; https://example.com/api/v1/putreceiver  Explanation of commands:
+      <description>When testing a local webservice, I needed to upload a file, with HTTP Basic Authentication. Quick googling returned a cURL onliner, which got the job done:
+curl -u &amp;quot;username:password&amp;quot; -X PUT -H &amp;quot;Content-Type: text/xml&amp;quot; -d &amp;quot;@filepath&amp;quot; https://example.com/api/v1/putreceiver  Explanation of what exactly was passed as arguments:
 # sets the username and pass for HTTP basic auth -u &amp;quot;username:password&amp;quot; # specifies the HTTP verb which we will use as the request type -X PUT # adds extra header for content type -H &amp;quot;Content-Type: text/xml&amp;quot; # attaches the file -d &amp;quot;@filepath&amp;quot; # address of the webservice https://example.</description>
     </item>
     

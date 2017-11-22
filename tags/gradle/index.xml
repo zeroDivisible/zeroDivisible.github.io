@@ -17,7 +17,7 @@
       <pubDate>Fri, 10 Jan 2014 11:44:08 +0000</pubDate>
       
       <guid>https://zerodivisible.io/blog/gradle-adding-new-sourcesets-recognized-from-intellij-idea/</guid>
-      <description>From time to time having normal tests configured in my Gradle build files is not enough - especially when I&amp;rsquo;m dealing with big, multi-module projects. There might be a need to either create a functional test or maybe test the behaviour of code while playing with new library. If unit tests are not enough in this case, it&amp;rsquo;s better to create some kind of functional or integration one, especially that once it&amp;rsquo;s done in a structured way, your colleagues will know where to go if they want to check something.</description>
+      <description>Some of the bigger projects which I&amp;rsquo;ve been working on recently have a bit more complex Gradle build scripts for them. One nifty thing which I thought that it would be worth documenting is how one of such projects is dealing with multi-module projects - and having a separate build target configured for running functional tests for it.From time to time having normal tests configured in my Gradle build files is not enough - especially when I&amp;rsquo;m dealing with big, multi-module projects.</description>
     </item>
     
   </channel>

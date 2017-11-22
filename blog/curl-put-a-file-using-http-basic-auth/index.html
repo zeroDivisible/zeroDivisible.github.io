@@ -9,13 +9,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 
-<meta name="description" content="There is a myriad of ways how a file can be PUT to a RESTful webservice. If you need to send one using HTTP basic authentication, here is one way to do this using curl:
-curl -u &quot;username:password&quot; -X PUT -H &quot;Content-Type: text/xml&quot; -d &quot;@filepath&quot; https://example.com/api/v1/putreceiver  Explanation of commands:
+<meta name="description" content="When testing a local webservice, I needed to upload a file, with HTTP Basic Authentication. Quick googling returned a cURL onliner, which got the job done:
+curl -u &quot;username:password&quot; -X PUT -H &quot;Content-Type: text/xml&quot; -d &quot;@filepath&quot; https://example.com/api/v1/putreceiver  Explanation of what exactly was passed as arguments:
 # sets the username and pass for HTTP basic auth -u &quot;username:password&quot; # specifies the HTTP verb which we will use as the request type -X PUT # adds extra header for content type -H &quot;Content-Type: text/xml&quot; # attaches the file -d &quot;@filepath&quot; # address of the webservice https://example.">
 
 <meta property="og:title" content="Curl: PUT a File using HTTP Basic Auth" />
-<meta property="og:description" content="There is a myriad of ways how a file can be PUT to a RESTful webservice. If you need to send one using HTTP basic authentication, here is one way to do this using curl:
-curl -u &quot;username:password&quot; -X PUT -H &quot;Content-Type: text/xml&quot; -d &quot;@filepath&quot; https://example.com/api/v1/putreceiver  Explanation of commands:
+<meta property="og:description" content="When testing a local webservice, I needed to upload a file, with HTTP Basic Authentication. Quick googling returned a cURL onliner, which got the job done:
+curl -u &quot;username:password&quot; -X PUT -H &quot;Content-Type: text/xml&quot; -d &quot;@filepath&quot; https://example.com/api/v1/putreceiver  Explanation of what exactly was passed as arguments:
 # sets the username and pass for HTTP basic auth -u &quot;username:password&quot; # specifies the HTTP verb which we will use as the request type -X PUT # adds extra header for content type -H &quot;Content-Type: text/xml&quot; # attaches the file -d &quot;@filepath&quot; # address of the webservice https://example." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zerodivisible.io/blog/curl-put-a-file-using-http-basic-auth/" />
@@ -161,12 +161,12 @@ curl -u &quot;username:password&quot; -X PUT -H &quot;Content-Type: text/xml&quo
                 </div>
             </div>
             <div class="markdown">
-                <p>There is a myriad of ways how a file can be <code>PUT</code> to a RESTful webservice. If you need to send one using HTTP basic authentication, here is one way to do this using <code>curl</code>:</p>
+                <p>When testing a local webservice, I needed to upload a file, with HTTP Basic Authentication. Quick googling returned a cURL onliner, which got the job done:</p>
 
 <pre><code>curl -u &quot;username:password&quot; -X PUT -H &quot;Content-Type: text/xml&quot; -d &quot;@filepath&quot;  https://example.com/api/v1/putreceiver
 </code></pre>
 
-<p>Explanation of commands:</p>
+<p>Explanation of what exactly was passed as arguments:</p>
 
 <pre><code># sets the username and pass for HTTP basic auth
 -u &quot;username:password&quot;
