@@ -7,13 +7,13 @@ draft: false
 ---
 
 
-[Archlinux](https://www.archlinux.org/) is a really interesting Linux distribution - and it's one of my favorite ones. It might have a steep learning curve, but once you dig into it, it will work like a charm. Unless you will switch to some distro and want to come back after an undefined period of time.
+[Archlinux](https://www.archlinux.org/) is my main (and currently used) Linux distribution. It might have a steep learning curve, but once configured, it will work like a charm. Just don't leave it be for few months and use something else in that time - because once back, you won't recognize how things had changed :)
 
-As recently I've been mostly using CentOS & RedHat Linux, I wanted to get back to Archlinux, just to spice things a little and see what's going on in with my favorite distro. The easiest way of gradually going back, was to build my personal dev environment ("playground") based on Arch. I had decided to create a set of [Ansible](http://www.ansible.com/home) playbooks, which I could then use both with [Vagrant](https://www.vagrantup.com/) to spin the env, and later use the same set of scripts to provision my laptop, once I will decide to switch the main OS to Arch once again (it's not a question of "if", only "when" :)).
+Recently I've been mostly using CentOS & RedHat Linux, I wanted to get back to Archlinux, just to see some recent changes. The easiest way of gradually going back, was to build my personal dev environment ("playground") based on Arch. I had decided to create a set of [Ansible](http://www.ansible.com/home) playbooks, which I could then use both from within [Vagrant](https://www.vagrantup.com/) and later use the same set of scripts to provision my laptop and / or PC.
 
-Everything was going smoothly, except when I had started to install packages from [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository). There's a whole separate back-story of the rationale behind my problem, but it boils down to the fact that in my Ansible playbooks I needed to be able to either automatically trust incoming keys or disable that verification check.
+Everything was going smoothly, until I started installing packages from [AUR](https://wiki.archlinux.org/index.php/Arch_User_Repository). There's a whole separate back-story of the rationale behind my problem, but it boils down to the fact that in my Ansible playbooks I needed to be able to either automatically trust incoming GPG keys or disable that verification check.
 
-Some background details can be found here:
+Some quick googling brought me to those pages:
 
 - [Having pacman verify packages](https://www.archlinux.org/news/having-pacman-verify-packages/)
 - [GnuPG 2.1 and the pacman keyring](https://www.archlinux.org/news/gnupg-21-and-the-pacman-keyring/)
@@ -50,4 +50,4 @@ y
 quit
 ```
 
-is just an invocation of trusting a key, with highest level (5), confirming it with ``y`` and quitting the edit mode.
+was just an invocation of trusting a key, with highest level (5), confirming it with ``y`` and quitting the edit mode.

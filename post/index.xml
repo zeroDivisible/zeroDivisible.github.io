@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on zerodivisible.io</title>
+    <link>https://zerodivisible.io/post/</link>
+    <description>Recent content in Posts on zerodivisible.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 18 Jan 2015 18:38:28 +0000</lastBuildDate>
+    
+	<atom:link href="https://zerodivisible.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Archlinux and AUR packages signed With untrusted GPG key</title>
+      <link>https://zerodivisible.io/post/archlinux-aur-packages-signed-with-untrusted-gpg-key/</link>
+      <pubDate>Sun, 18 Jan 2015 18:38:28 +0000</pubDate>
+      
+      <guid>https://zerodivisible.io/post/archlinux-aur-packages-signed-with-untrusted-gpg-key/</guid>
+      <description>Archlinux is my main (and currently used) Linux distribution. It might have a steep learning curve, but once configured, it will work like a charm. Just don&amp;rsquo;t leave it be for few months and use something else in that time - because once back, you won&amp;rsquo;t recognize how things had changed :)
+Recently I&amp;rsquo;ve been mostly using CentOS &amp;amp; RedHat Linux, I wanted to get back to Archlinux, just to see some recent changes.</description>
+    </item>
+    
+    <item>
+      <title>Capturing gifs from desktop on OS X</title>
+      <link>https://zerodivisible.io/post/capturing-gifs-from-desktop-on-osx/</link>
+      <pubDate>Sun, 11 Jan 2015 00:04:03 +0000</pubDate>
+      
+      <guid>https://zerodivisible.io/post/capturing-gifs-from-desktop-on-osx/</guid>
+      <description>From time to time, I&amp;rsquo;m finding a need to record a portion of my desktop, upload it and share with somebody. On OSX, the easiest way of doing so which I had found is by using a nifty tool called GifGrabber.
+Available for free from the App Store, makes the whole process as painless as it can be. Features are limitied, but honestly - it has exactly what you want from a tool which is called GifGrabber: you can capture a part of desktop, edit it to fine-tune starting point and an end and upload it to gfycat, having a link in return.</description>
+    </item>
+    
+    <item>
+      <title>Using Emacs&#39;s ansi-term with ZSH</title>
+      <link>https://zerodivisible.io/post/using-emacss-ansi-term-with-zsh/</link>
+      <pubDate>Sun, 04 Jan 2015 20:47:00 +0000</pubDate>
+      
+      <guid>https://zerodivisible.io/post/using-emacss-ansi-term-with-zsh/</guid>
+      <description>If instead of Bash you&amp;rsquo;re using ZSH and you somehow decided to be even more hipster, you can try using ZSH from within Emacs. There are multiple terminal emulators accessible inside Emacs, but for me, when I had been running the whole setup on OSX, neither of them didn&amp;rsquo;t play nicely with ANSI escape codes. Solution which worked for me was described on StackOverflow and to work, required me to:</description>
+    </item>
+    
+    <item>
+      <title>Gradle: adding new sourceSets recognized from Intellij IDEA</title>
+      <link>https://zerodivisible.io/post/gradle-adding-new-sourcesets-recognized-from-intellij-idea/</link>
+      <pubDate>Fri, 10 Jan 2014 11:44:08 +0000</pubDate>
+      
+      <guid>https://zerodivisible.io/post/gradle-adding-new-sourcesets-recognized-from-intellij-idea/</guid>
+      <description>From time to time having normal tests configured in my Gradle build files is not enough - especially when I&amp;rsquo;m dealing with big, multi-module projects. There might be a need to either create a functional test or maybe test the behaviour of code while playing with new library. If unit tests are not enough in this case, it&amp;rsquo;s better to create some kind of functional or integration one, especially that once it&amp;rsquo;s done in a structured way, your colleagues will know where to go if they want to check something.</description>
+    </item>
+    
+    <item>
+      <title>Curl: PUT a File using HTTP Basic Auth</title>
+      <link>https://zerodivisible.io/post/curl-put-file-basic-auth/</link>
+      <pubDate>Tue, 07 Jan 2014 15:57:18 +0000</pubDate>
+      
+      <guid>https://zerodivisible.io/post/curl-put-file-basic-auth/</guid>
+      <description>There is a myriad of ways how a file can be PUT to a RESTful webservice. If you need to send one using HTTP basic authentication, here is one way to do this using curl:
+curl -u &amp;quot;username:password&amp;quot; -X PUT -H &amp;quot;Content-Type: text/xml&amp;quot; -d &amp;quot;@filepath&amp;quot; https://example.com/api/v1/putreceiver  Explanation of commands:
+# sets the username and pass for HTTP basic auth -u &amp;quot;username:password&amp;quot; # specifies the HTTP verb which we will use as the request type -X PUT # adds extra header for content type -H &amp;quot;Content-Type: text/xml&amp;quot; # attaches the file -d &amp;quot;@filepath&amp;quot; # address of the webservice https://example.</description>
+    </item>
+    
+    <item>
+      <title>GPG Keys</title>
+      <link>https://zerodivisible.io/post/gpg-keys/</link>
+      <pubDate>Tue, 07 Jan 2014 09:46:37 +0000</pubDate>
+      
+      <guid>https://zerodivisible.io/post/gpg-keys/</guid>
+      <description>From time to time I have a need to work with GPG keys - (i.e. when dealing with third party interfaces and encrypting files to be send). Usually keys which I&amp;rsquo;m using are being delivered to me - but especially when developing (&amp;amp; testing), I have a need to go back to command line and use gpg from within it. As each time when I&amp;rsquo;m doing so, I have to either read man for GPG or use Google, I just thought that I will put some of the most common things which I&amp;rsquo;m using in the blog post.</description>
+    </item>
+    
+  </channel>
+</rss>

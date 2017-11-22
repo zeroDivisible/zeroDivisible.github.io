@@ -31,7 +31,7 @@ identifier             = "code"
 url = "/code/"
 
 [params]
-latestpostscount = 5 # how many posts to display on the home page
+latestpostscount = 10 # how many posts to display on the home page
 selfintro = "I hope I'll write some posts this time."
 highlightjs = true
 

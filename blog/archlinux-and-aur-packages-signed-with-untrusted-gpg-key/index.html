@@ -9,12 +9,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer">
 
-<meta name="description" content="Archlinux is a really interesting Linux distribution - and it&rsquo;s one of my favorite ones. It might have a steep learning curve, but once you dig into it, it will work like a charm. Unless you will switch to some distro and want to come back after an undefined period of time.
-As recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get back to Archlinux, just to spice things a little and see what&rsquo;s going on in with my favorite distro.">
+<meta name="description" content="Archlinux is my main (and currently used) Linux distribution. It might have a steep learning curve, but once configured, it will work like a charm. Just don&rsquo;t leave it be for few months and use something else in that time - because once back, you won&rsquo;t recognize how things had changed :)
+Recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get back to Archlinux, just to see some recent changes.">
 
 <meta property="og:title" content="Archlinux and AUR packages signed With untrusted GPG key" />
-<meta property="og:description" content="Archlinux is a really interesting Linux distribution - and it&rsquo;s one of my favorite ones. It might have a steep learning curve, but once you dig into it, it will work like a charm. Unless you will switch to some distro and want to come back after an undefined period of time.
-As recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get back to Archlinux, just to spice things a little and see what&rsquo;s going on in with my favorite distro." />
+<meta property="og:description" content="Archlinux is my main (and currently used) Linux distribution. It might have a steep learning curve, but once configured, it will work like a charm. Just don&rsquo;t leave it be for few months and use something else in that time - because once back, you won&rsquo;t recognize how things had changed :)
+Recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get back to Archlinux, just to see some recent changes." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zerodivisible.io/blog/archlinux-and-aur-packages-signed-with-untrusted-gpg-key/" />
 
@@ -159,13 +159,13 @@ As recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to 
                 </div>
             </div>
             <div class="markdown">
-                <p><a href="https://www.archlinux.org/">Archlinux</a> is a really interesting Linux distribution - and it&rsquo;s one of my favorite ones. It might have a steep learning curve, but once you dig into it, it will work like a charm. Unless you will switch to some distro and want to come back after an undefined period of time.</p>
+                <p><a href="https://www.archlinux.org/">Archlinux</a> is my main (and currently used) Linux distribution. It might have a steep learning curve, but once configured, it will work like a charm. Just don&rsquo;t leave it be for few months and use something else in that time - because once back, you won&rsquo;t recognize how things had changed :)</p>
 
-<p>As recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get back to Archlinux, just to spice things a little and see what&rsquo;s going on in with my favorite distro. The easiest way of gradually going back, was to build my personal dev environment (&ldquo;playground&rdquo;) based on Arch. I had decided to create a set of <a href="http://www.ansible.com/home">Ansible</a> playbooks, which I could then use both with <a href="https://www.vagrantup.com/">Vagrant</a> to spin the env, and later use the same set of scripts to provision my laptop, once I will decide to switch the main OS to Arch once again (it&rsquo;s not a question of &ldquo;if&rdquo;, only &ldquo;when&rdquo; :)).</p>
+<p>Recently I&rsquo;ve been mostly using CentOS &amp; RedHat Linux, I wanted to get back to Archlinux, just to see some recent changes. The easiest way of gradually going back, was to build my personal dev environment (&ldquo;playground&rdquo;) based on Arch. I had decided to create a set of <a href="http://www.ansible.com/home">Ansible</a> playbooks, which I could then use both from within <a href="https://www.vagrantup.com/">Vagrant</a> and later use the same set of scripts to provision my laptop and / or PC.</p>
 
-<p>Everything was going smoothly, except when I had started to install packages from <a href="https://wiki.archlinux.org/index.php/Arch_User_Repository">AUR</a>. There&rsquo;s a whole separate back-story of the rationale behind my problem, but it boils down to the fact that in my Ansible playbooks I needed to be able to either automatically trust incoming keys or disable that verification check.</p>
+<p>Everything was going smoothly, until I started installing packages from <a href="https://wiki.archlinux.org/index.php/Arch_User_Repository">AUR</a>. There&rsquo;s a whole separate back-story of the rationale behind my problem, but it boils down to the fact that in my Ansible playbooks I needed to be able to either automatically trust incoming GPG keys or disable that verification check.</p>
 
-<p>Some background details can be found here:</p>
+<p>Some quick googling brought me to those pages:</p>
 
 <ul>
 <li><a href="https://www.archlinux.org/news/having-pacman-verify-packages/">Having pacman verify packages</a></li>
@@ -202,7 +202,7 @@ y
 quit
 </code></pre>
 
-<p>is just an invocation of trusting a key, with highest level (5), confirming it with <code>y</code> and quitting the edit mode.</p>
+<p>was just an invocation of trusting a key, with highest level (5), confirming it with <code>y</code> and quitting the edit mode.</p>
 
                 <br>
 		<p><a href="https://zerodivisible.io/blog/">Back to posts</a></p>
