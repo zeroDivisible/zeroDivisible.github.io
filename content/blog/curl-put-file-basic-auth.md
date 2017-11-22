@@ -7,13 +7,13 @@ draft: false
 ---
 
 
-There is a myriad of ways how a file can be ``PUT`` to a RESTful webservice. If you need to send one using HTTP basic authentication, here is one way to do this using ``curl``:
+When testing a local webservice, I needed to upload a file, with HTTP Basic Authentication. Quick googling returned a cURL onliner, which got the job done:
 
 ```
 curl -u "username:password" -X PUT -H "Content-Type: text/xml" -d "@filepath"  https://example.com/api/v1/putreceiver
 ```
 
-Explanation of commands:
+Explanation of what exactly was passed as arguments:
 
 ```
 # sets the username and pass for HTTP basic auth

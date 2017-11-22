@@ -6,7 +6,7 @@ categories: ["blog"]
 draft: false
 ---
 
-From time to time I have a need to work with GPG keys - (i.e. when dealing with third party interfaces and encrypting files to be send). Usually keys which I'm using are being delivered to me - but especially when developing (& testing), I have a need to go back to command line and use gpg from within it. As each time when I'm doing so, I have to either read ``man`` for ``GPG`` or use Google, I just thought that I will put some of the most common things which I'm using in the blog post. 
+I didn't have much chances to work with GPG - and when I usually do, it's to communicate with third-party services, when exchanging encrypted files. Usually keys which I'm using are being delivered to me - but especially when developing (& testing), I have a need to get back to the command line and somehow generate a key for myself. Each time when doing this, instead of reaching to `man`, I thought that I may document the command on this blog:
 
 ## Generate GPG Key
 ```
@@ -38,4 +38,3 @@ gpg --output exported_key_pub.gpg --armor --export AAAAAA
 # AAAAAA being the ID of the key from key command listing keys
 gpg --output exported_key_sec.gpg --armor --export-secret-key AAAAA
 ```
-
