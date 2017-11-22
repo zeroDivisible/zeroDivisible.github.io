@@ -31,9 +31,11 @@ identifier             = "code"
 url = "/code/"
 
 [params]
-latestpostscount = 10 # how many posts to display on the home page
-selfintro = "I hope I'll write some posts this time."
-highlightjs = true
+latestpostscount       = 10 # how many posts to display on the home page
+selfintro              = "I hope I'll write some posts this time."
+highlightjs            = true
+dateform               = "Jan 2, 2006"
+bloggroupby            = "month"
 
 twitter = "//twitter.com/zeroDivisible"
 github = "//github.com/zeroDivisible"
